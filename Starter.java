@@ -1,9 +1,12 @@
+package app;
+
+import test.Test;
+
 public class Starter{
-	String msg = "Hello World";
 	
 	public static void main(String[] args){
 
-		new Starter(args);
+		new Starter();
 
 	}
 	
@@ -12,6 +15,11 @@ public class Starter{
 	}
 	
 	public Starter(String[] args){
-	System.out.println(msg + args[0]);
+	System.out.println("Hello World");
+	Test test = new Test();
+	System.out.println( test.getMessage() );
+	
 	}
+	
+	
 }
